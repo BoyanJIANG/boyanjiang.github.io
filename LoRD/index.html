@@ -1,0 +1,221 @@
+
+<html>
+
+<head>
+    <link rel="StyleSheet" href="style.css" type="text/css" media="all">
+    <title>LoRD</title>
+    <meta property="og:title" content="LoRD: Local 4D Implicit Representation for High-Fidelity Dynamic Human Modeling">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body>
+    <br>
+    <div class="center-div">
+        <span style="font-size:40px">LoRD: Local 4D Implicit Representation for High-Fidelity Dynamic Human Modeling</span>
+    </div>
+
+    <br>
+    <table align="center" width="800px">
+        <tbody>
+            <tr>
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Boyan Jiang<sup>1</sup></a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Xinlin Ren<sup>1</sup></a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Mingsong Dou<sup>2</sup></a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Xiangyang Xue<sup>1</sup></a></span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table align="center" width="450px">
+        <tbody>
+            <tr>
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="https://yanweifu.github.io/">Yanwei Fu<sup>1</sup></a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="https://www.zhangyinda.com/">Yinda Zhang<sup>2</sup></a></span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table align="center" width="700px">
+        <tbody>
+            <tr>
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><sup>1</sup>Fudan University &nbsp; &nbsp; <sup>2</sup>Google</span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+    <table align="center" width="600px">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <a href="#"><img src="resources/images/teaser.png" width="1000px"></a><br>
+                    </div>
+                    <div class="center-div">
+                        <span style="font-size:14px"><i><b>Overview of Our LoRD Representation.</b>
+                            We introduce a local 4D implicit representation
+                            for dynamic human, which has the merits of both 4D human modeling
+                            and local representation, and enables high-fidelity reconstruction
+                            from sparse point clouds or RGB-D videos</i></span>
+                    </div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <br><br>
+    <hr>
+    <div class="center-div">
+        <h1>Abstract</h1>
+    </div>
+    <p style="text-align:justify">
+        Recent progress in 4D implicit representation focuses on globally controlling the shape and motion
+        with low dimensional latent vectors, which is prone to missing surface details and accumulating
+        tracking error. While many deep local representations have shown promising results for 3D shape
+        modeling, their 4D counterpart does not exist yet. In this paper, we fill this blank by proposing
+        a novel Local 4D implicit Representation for Dynamic clothed human, named LoRD, which has the
+        merits of both 4D human modeling and local representation, and enables high-fidelity reconstruction
+        with detailed surface deformations, such as clothing wrinkles. Particularly, our key insight is
+        to encourage the network to learn the latent codes of local part-level representation,
+        capable of explaining the local geometry and temporal deformations. To make the inference at test-time,
+        we first estimate the inner body skeleton motion to track local parts at each time step,
+        and then optimize the latent codes for each part via auto-decoding based on different
+        types of observed data. Extensive experiments demonstrate that the proposed method has
+        strong capability for representing 4D human, and outperforms state-of-the-art methods
+        on practical applications, including 4D reconstruction from sparse points,
+        non-rigid depth fusion, both qualitatively and quantitatively.    <br><br>
+
+    <hr>
+    <div class="center-div">
+        <h1 id="paper">Paper and Code</h1>
+    </div>
+    <table align="center" width="600px">
+
+        <tbody>
+            <tr>
+                <td>
+                    <img class="layered-paper-big" style="height:175px" src="resources/images/page1.png">
+                </td>
+                <td>
+                    <span style="font-size:14pt">B. Jiang, X. Ren, M. Dou, X. Xue, Y. Fu, Y. Zhang</span>
+                    <br><br>
+                    <b><span style="display:inline-block;width:600px;font-size:14pt">LoRD: Local 4D Implicit Representation for High-Fidelity Dynamic Human Modeling</span></b>
+                    <br><br>
+                    <span style="font-size:14pt">ECCV 2022</span>
+                    <br><br>
+                    <span style="font-size:20px">
+                        <a href="">[arXiv]</a> &nbsp; &nbsp;
+                        <a href="https://github.com/BoyanJIANG/LoRD">[GitHub]</a> &nbsp; &nbsp;
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+    <hr>
+    <table align="center" width="980px">
+        <tbody>
+            <tr>
+                <td>
+                    <left>
+                        <div class="center-div">
+                            <h1>Video</h1>
+                        </div>
+                        <iframe width="956" height="538" src="https://www.youtube.com/embed/dXuZVrmYKxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    </left>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+        <br><br>
+
+    <hr>
+    <div class="center-div">
+        <h1 id="code">Results</h1>
+    </div>
+    <div class="center-div" style="width:1100px">
+        <table align="center" width="900px">
+            <tbody>
+                <tr>
+                    <td rowspan="2" style="height:60px;border-color:#8E8E8E;border-right-style:solid;border-width:1px">
+                        <div class="center-div">
+                            <img src="resources/images/instance.gif" width="310px"><br>
+                        </div>
+                    </td>
+                    <td rowspan="2" style="height:60px;border-color:#8E8E8E;border-right-style:solid;border-width:1px">
+                        <div class="center-div">
+                            <img src="resources/images/gene.gif" width="310px"><br>
+                        </div>
+                    </td>
+                    <td rowspan="2">
+                        <div class="center-div">
+                            <img src="resources/images/fusion.gif" width="400px"><br>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br><br>
+
+    <hr>
+    <table align="center" width="980px">
+        <tbody>
+            <tr>
+                <td>
+                    <left>
+                        <div class="center-div">
+                            <h1>Acknowledgements</h1>
+                        </div>
+                        <div class="center-div">
+                        This work was supported by Shanghai Municipal Science
+                            and Technology Major Projects (No.2018SHZDZX01, and 2021SHZDZX0103).
+                            The corresponding authors are Xiangyang Xue, Yanwei Fu and Yinda Zhang.
+                            The website is modified from this <a href="https://walsvid.github.io/Pixel2MeshPlusPlus/">template</a>.
+                        </div>
+                    </left>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+
+
+</body>
+
+</html>
