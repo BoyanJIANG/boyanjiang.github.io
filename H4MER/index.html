@@ -1,0 +1,225 @@
+
+<html>
+
+<head>
+    <link rel="StyleSheet" href="style.css" type="text/css" media="all">
+    <title>H4MER</title>
+    <meta property="og:title" content="H4MER: Human 4D Modeling by Learning Neural Compositional Representation with Transformer">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body>
+    <br>
+    <div class="center-div">
+        <span style="font-size:40px">H4MER: Human 4D Modeling by Learning Neural Compositional Representation with Transformer</span>
+    </div>
+
+    <br>
+    <table align="center" width="800px">
+        <tbody>
+            <tr>
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Boyan Jiang<sup>1</sup></a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="https://www.zhangyinda.com/">Yinda Zhang<sup>2</sup></a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Xiangyang Xue<sup>1</sup></a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="https://yanweifu.github.io/">Yanwei Fu<sup>1</sup></a></span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table align="center" width="700px">
+        <tbody>
+            <tr>
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><sup>1</sup>Fudan University &nbsp; &nbsp; <sup>2</sup>Google</span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+    <table align="center" width="600px">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <a href="#"><img src="resources/images/teaser.gif" width="1000px"></a><br>
+                    </div>
+                    <div class="center-div">
+                        <span style="font-size:14px"><i><b>Overview of Our H4D Representation.</b> We introduce a compact and compositional representation for 4D human,
+                            which represents a temporally dynamic human with the low-dimensional codes for body shape, initial pose, skeleton motion and auxiliary information.</i></span>
+                    </div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <br><br>
+    <hr>
+    <div class="center-div">
+        <h1>Abstract</h1>
+    </div>
+    <p style="text-align:justify">
+        Despite the impressive results achieved by deep learning based 3D reconstruction,
+        the techniques of directly learning to model 4D human captures with detailed geometry
+        have been less studied. This work presents a novel neural compositional representation
+        for Human 4D Modeling  with transformER (H4MER).  Specifically, our H4MER is a compact
+        and compositional representation for dynamic human by exploiting the human body prior
+        from the widely used SMPL parametric model. Thus, H4MER can represent a dynamic 3D human
+        over a temporal span with the codes of shape, initial pose, motion and auxiliaries.
+        A simple yet effective linear motion model is proposed to provide a rough and regularized
+        motion estimation, followed by per-frame compensation for pose and geometry details with
+        the residual encoded in the auxiliary codes. We present a novel Transformer-based
+        feature extractor and conditional GRU decoder to facilitate learning and improve the
+        representation capability. Extensive experiments demonstrate our method is not only
+        efficacy in recovering dynamic human with accurate motion and detailed geometry,
+        but also amenable to various 4D human related tasks, including monocular video fitting,
+        motion completion, future prediction and motion retargeting.
+    <hr>
+    <div class="center-div">
+        <h1 id="paper">Paper and Code of Conference Version</h1>
+    </div>
+    <table align="center" width="600px">
+
+        <tbody>
+            <tr>
+                <td>
+                    <img class="layered-paper-big" style="height:175px" src="resources/images/page1.png">
+                </td>
+                <td>
+                    <span style="font-size:14pt">B. Jiang, Y. Zhang, X. Wei, X. Xue, Y. Fu</span>
+                    <br><br>
+                    <b><span style="display:inline-block;width:600px;font-size:14pt">H4D: Human 4D Modeling by Learning Neural Compositional Representation</span></b>
+                    <br><br>
+                    <span style="font-size:14pt">CVPR 2022</span>
+                    <br><br>
+                    <span style="font-size:20px">
+                        <a href="https://arxiv.org/pdf/2203.01247.pdf">[arXiv]</a> &nbsp; &nbsp;
+                        <a href="https://boyanjiang.github.io/H4D/">[Project Page]</a> &nbsp; &nbsp;
+                        <a href="https://github.com/BoyanJIANG/H4D">[GitHub]</a> &nbsp; &nbsp;
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+<!--    <hr>-->
+<!--    <table align="center" width="980px">-->
+<!--        <tbody>-->
+<!--            <tr>-->
+<!--                <td>-->
+<!--                    <left>-->
+<!--                        <div class="center-div">-->
+<!--                            <h1>Video</h1>-->
+<!--                        </div>-->
+<!--                        <iframe width="956" height="538" src="https://www.youtube.com/embed/dXuZVrmYKxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    </left>-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--        </tbody>-->
+
+<!--    </table>-->
+        <br><br>
+
+    <hr>
+    <div class="center-div">
+        <h1 id="code">Results</h1>
+    </div>
+    <div class="center-div" style="width:1100px">
+        <table align="center" width="1100px">
+            <tbody>
+                <tr>
+                    <td colspan="2" style="border-color:#8E8E8E;border-bottom-style:solid;border-width:1px">
+                        <div class="center-div">
+                            <img src="resources/images/video_fitting.gif" width="1050px"><br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-color:#8E8E8E;border-bottom-style:solid;border-right-style:solid;border-width:1px">
+                        <div class="center-div">
+                            <img src="resources/images/4d_recons1.gif" width="525px"><br>
+                        </div>
+                    </td>
+                    <td style="border-color:#8E8E8E;border-bottom-style:solid;border-width:1px">
+                        <div class="center-div">
+                            <img src="resources/images/4d_recons2.gif" width="525px"><br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-color:#8E8E8E;border-bottom-style:solid;border-right-style:solid;border-width:1px">
+                        <div class="center-div">
+                            <img src="resources/images/temporal_comp.gif" width="525px"><br>
+                        </div>
+                    </td>
+                    <td style="border-color:#8E8E8E;border-bottom-style:solid;border-width:1px">
+                        <div class="center-div">
+                            <img src="resources/images/future_pred.gif" width="525px"><br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height:90px;border-color:#8E8E8E;border-right-style:solid;border-width:1px">
+                        <div class="center-div">
+                            <img src="resources/images/spatial_comp.gif" width="525px"><br>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="center-div">
+                            <img src="resources/images/retargeting.gif" width="525px"><br>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br><br>
+
+    <hr>
+    <table align="center" width="980px">
+        <tbody>
+            <tr>
+                <td>
+                    <left>
+                        <div class="center-div">
+                            <h1>Acknowledgements</h1>
+                        </div>
+                        <div class="center-div">
+                        We thank Xingkui Wei for offering technical supports of several baseline methods.
+                        The corresponding author is Yanwei Fu.
+                        The website is modified from this <a href="https://walsvid.github.io/Pixel2MeshPlusPlus/">template</a>.
+                        </div>
+                    </left>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+
+
+</body>
+
+</html>
